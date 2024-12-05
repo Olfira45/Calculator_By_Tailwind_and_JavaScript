@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./image/Calculator_512.webp" type="image/x-icon">
+    <title>Calculator</title>
+</head>
+<body class=" m-0 p-0 box-border font-serif " >
+    <div class="container w-full h-full bg-slate-500 flex align-middle justify-center">
+        <div class="calculator bg-gray-800 shadow-2xl rounded-2xl p-5 mt-3">
+            <form>
+                <div class="flex justify-end mx-0 my-5">
+                    <input type="text" name="display" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent m-2 cursor-pointer text-white text-right flex-1 shadow-none text-5xl">
+                </div>
+                <div class="">
+                    <input type="button" value="AC" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-green-400" onclick="display.value = '' ">
+                    <input type="button" value="DE" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-green-400" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input type="button" value="." class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-green-400" onclick="display.value += '.'">
+                    <input type="button" value="/" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-green-400" onclick="display.value += '/'">
+                </div>
+                <div class="">
+                    <input type="button" value="7" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '7'">
+                    <input type="button" value="8" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '8'">
+                    <input type="button" value="9" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '9'">
+                    <input type="button" value="*" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-green-400" onclick="display.value += '*'">
+                </div>
+                <div class="">
+                    <input type="button" value="4" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '4'">
+                    <input type="button" value="5" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '5'">
+                    <input type="button" value="6" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '6'">
+                    <input type="button" value="-" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-green-400" onclick="display.value += '-'">
+                </div>
+                <div class="">
+                    <input type="button" value="1" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '1'">
+                    <input type="button" value="2" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '2'">
+                    <input type="button" value="3" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '3'">
+                    <input type="button" value="+" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-green-400" onclick="display.value += '+'">
+                </div>
+                <div class="">
+                    <input type="button" value="00" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '00'">
+                    <input type="button" value="0" class="border-none outline-0 w-16 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-white" onclick="display.value += '0'">
+                    <input type="button" value="=" class="border-none outline-0 w-36 h-16 rounded-lg bg-transparent text-2xl m-2 cursor-pointer shadow-2xl text-green-400" onclick="display.value = eval(display.value) ">
+                </div>
+              
+
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
